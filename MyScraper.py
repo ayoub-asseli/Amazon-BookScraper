@@ -282,11 +282,3 @@ table = generate_my_items_table(items_url[:10])
 
 books = pd.DataFrame(table, columns=['Titres', '[Formats, Prix]', 'Nombre de pages Format Broché', 'Taille du fichier Kindle' ,'Nombre de pages Format Poche', 'Nombre de pages Format Relié', 'Dimensions Format Broché', 'Dimensions Format Poche', 'Dimensions Format Relié', 'Evaluations (sur 5)', 'Nombre d\'évaluations', 'Liens' ])
 books.to_csv('test_fx.csv')
-
-
-# Test
-'''
-url = 'https://www.amazon.fr/Recettes-light-inratables-cuiseur-Inratables-ebook/dp/B07MM614F5/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1618672111&sr=1-27'
-soup = get_data_page(url)
-print(get_file_size_kindle(url))
-'''
