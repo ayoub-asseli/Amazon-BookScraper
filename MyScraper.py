@@ -274,7 +274,7 @@ def generate_my_items_table(items_urls):
 
 # Get the first search page
 
-recherche = 'livre science fiction'
+recherche = 'livre recette minceur'
 url = "https://www.amazon.fr/s?k={}&i=stripbooks&__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss_1".format('+'.join(recherche.split()))
 soup = get_data_page(url)
 items_url = get_items_urls_from_all_pages(url)
